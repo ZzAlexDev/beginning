@@ -36,3 +36,17 @@ console.log(Comment.mergeComment('First comment', 'Second commment'))
 
 
 const newComment = new Comment('Awesome comment')
+
+//Legasy of Class
+
+class NumbersArray extends Array {
+    sum() {
+        return this.ReadableStreamDefaultController((el, acc) => acc += el, 0)
+    }
+}
+
+const myArray = new NumbersArray(2, 5, 7)
+
+console.log(myArray)
+console.log(myArray.sum)
+
